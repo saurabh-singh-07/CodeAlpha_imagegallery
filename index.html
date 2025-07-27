@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Gallery with Folders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('animal')">Animal</button>
+    <button onclick="filterImages('mountain')">Mountain</button>
+    <button onclick="filterImages('river')">River</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <!-- Animal Folder -->
+    <div class="image-item animal">
+      <img src="photo/animal01.jpeg" alt="Animal" onclick="openLightbox(this)">
+    </div>
+    <div class="image-item animal">
+      <img src="photo/animal02.jpeg" alt="Animal" onclick="openLightbox(this)">
+    </div>
+    <div class="image-item animal">
+      <img src="photo/animal03.jpeg" alt="Animal" onclick="openLightbox(this)">
+    </div>
+    <div class="image-item animal">
+      <img src="photo/animal04.jpeg" alt="Animal" onclick="openLightbox(this)">
+    </div>
+    <div class="image-item animal">
+      <img src="photo/animal05.jpeg" alt="Animal" onclick="openLightbox(this)">
+    </div>
+    <div class="image-item animal">
+      <img src="photo/animal06.jpeg" alt="Animal" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Mountain Folder -->
+    <div class="image-item mountain">
+      <img src="photo/mountain01.jpeg" alt="Mountain" onclick="openLightbox(this)">
+    </div>
+    <div class="image-item mountain">
+      <img src="photo/mountain02.jpeg" alt="Mountain" onclick="openLightbox(this)">
+    </div>
+     <div class="image-item mountain">
+      <img src="photo/mountain03.jpeg" alt="Mountain" onclick="openLightbox(this)">
+    </div>
+     <div class="image-item mountain">
+      <img src="photo/mountain04.jpeg" alt="Mountain" onclick="openLightbox(this)">
+    </div>
+     <div class="image-item mountain">
+      <img src="photo/mountain05.jpeg" alt="Mountain" onclick="openLightbox(this)">
+    </div>
+     <div class="image-item mountain">
+      <img src="photo/mountain06.jpeg" alt="Mountain" onclick="openLightbox(this)">
+    </div>
+
+    <!-- River Folder -->
+    <div class="image-item river">
+      <img src="photo/river01.jpeg" alt="River" onclick="openLightbox(this)">
+    </div>
+    <div class="image-item river">
+      <img src="photo/river02.jpeg" alt="River" onclick="openLightbox(this)">
+    </div>
+   <div class="image-item mountain">
+      <img src="photo/river03.jpeg" alt="River" onclick="openLightbox(this)">
+    </div>
+     <div class="image-item mountain">
+      <img src="photo/river04.jpeg" alt="River" onclick="openLightbox(this)">
+    </div>
+     <div class="image-item mountain">
+      <img src="photo/river05.jpeg" alt="River" onclick="openLightbox(this)">
+    </div>
+     <div class="image-item mountain">
+      <img src="photo/river06.jpeg" alt="River" onclick="openLightbox(this)">
+    </div>
+  </div>
+    
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightboxImage">
+    <div class="nav">
+      <span class="prev" onclick="changeImage(-1)">❮</span>
+      <span class="next" onclick="changeImage(1)">❯</span>
+    </div>
+  </div>
+
+  <script src="JavaScript.js"></script>
+</body>
+</html>
